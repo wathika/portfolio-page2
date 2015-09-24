@@ -6,7 +6,7 @@
 
 @import '../partials/layout'; // responsive grid and media queries
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -34,7 +34,7 @@ a {
 	text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Navigation
 
@@ -119,20 +119,20 @@ Navigation
 			> svg * {
 				stroke: $color-1;
 			}
-		} 
+		}
 	}
 
-	li:nth-of-type(2) .selected > svg *, 
+	li:nth-of-type(2) .selected > svg *,
 	li:nth-of-type(2) .selected:hover > svg * {
 		stroke: $color-2;
 	}
 
-	li:nth-of-type(3) .selected > svg *, 
+	li:nth-of-type(3) .selected > svg *,
 	li:nth-of-type(3) .selected:hover > svg * {
 		stroke: $color-3;
 	}
 
-	li:nth-of-type(4) .selected > svg *, 
+	li:nth-of-type(4) .selected > svg *,
 	li:nth-of-type(4) .selected:hover > svg * {
 		stroke: $color-4;
 	}
@@ -163,7 +163,7 @@ Navigation
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
  Main Content
 
@@ -187,21 +187,21 @@ Navigation
 	/* Force Hardware Acceleration */
 	@include backface-visibility(hidden);
 	@include transform(translateZ(0));
-	
+
 	@include transform(translateX(-100%));
 	@include transition(transform 0s $animation-duration);
 
 	&.overflow-hidden {
 		/* this class is used to hide the scrolling bar while a new section is entering the viewport */
 		overflow: hidden;
-	} 
+	}
 
 	header {
 		position: relative;
 		height: 100vh;
 		width: 100%;
 		background: $color-1;
-		overflow: hidden; 
+		overflow: hidden;
 	}
 
 	&.services header {
@@ -232,7 +232,7 @@ Navigation
 
 		visibility: hidden;
 		@include transition(transform 0s $animation-duration, visibility 0s $animation-duration);
-		
+
 		@include transform(translateX(-50%) scale(0));
 		background: url('../img/cd-icon-arrow.svg') no-repeat center center;
 	}
@@ -251,7 +251,7 @@ Navigation
 
 			@include transform(translateX(-50%) scale(1));
 			@include transition(transform 0.3s $animation-duration, visibility 0s 0s);
-			
+
 			@include animation(cd-scroll-down 1.2s $animation-duration + 0.4s);
 			@include animation-iteration-count(2);
 		}
@@ -259,7 +259,7 @@ Navigation
 
 	@include MQ(S) {
 		padding-left: $nav-width-normal - $loading-bar-width;
-		
+
 		.cd-scroll {
 			@include calc(left, "50vw - (#{$nav-width-normal} - #{$loading-bar-width})/2");
 		}
@@ -289,11 +289,11 @@ Navigation
 	padding: 1em;
 	color: $color-6;
 	text-align: center;
-	
+
 	/* Force Hardware Acceleration */
 	@include backface-visibility(hidden);
 	@include transform(translateZ(0));
-	
+
 	opacity: 0;
 	@include transform(translateY(-50%) translateX(-80px));
 	@include transition(transform 0s $animation-duration, opacity 0s $animation-duration);
@@ -308,7 +308,7 @@ Navigation
 		opacity: 0.6;
 	}
 
-	.visible & { 
+	.visible & {
 		opacity: 1;
 		@include transform(translateY(-50%));
 		@include transition(transform 0.4s $animation-duration - 0.2s, opacity 0.4s $animation-duration - 0.2s);
@@ -344,7 +344,7 @@ Navigation
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
  Loading Bar
 
@@ -356,7 +356,7 @@ Navigation
 	left: $nav-width-small - $loading-bar-width;
 	width: $loading-bar-width;
 	visibility: hidden;
-	
+
 	/* Force Hardware Acceleration */
 	@include backface-visibility(hidden);
 	@include transform(translateZ(0));
@@ -376,7 +376,7 @@ Navigation
 	&.contact {
 		background-color: $color-4;
 	}
-	
+
 	&.loading {
 		visibility: visible;
 	}
