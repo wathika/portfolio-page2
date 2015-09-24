@@ -192,7 +192,12 @@ Navigation
   height: 100vh;
   width: 100%;
   background: #83b0b9;
+/*    background: url(../img/old-tech.jpg) no-repeat center center fixed;*/
   overflow: hidden;
+}
+.cd-section.index header {
+/*  background-color: #d35657;*/
+    background: url(../img/wallpaper.jpg) no-repeat center center fixed;
 }
 .cd-section.services header {
   background-color: #d35657;
@@ -340,11 +345,20 @@ Navigation
   -moz-transition: -moz-transform 0s 0.5s, opacity 0s 0.5s;
   transition: transform 0s 0.5s, opacity 0s 0.5s;
 }
+
 .cd-title h2 {
+/*
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
 }
+
 .cd-title span {
   opacity: 0.6;
 }
@@ -362,6 +376,12 @@ Navigation
 @media only screen and (min-width: 768px) {
   .cd-title h2 {
     font-size: 5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
   }
 }
 
