@@ -361,6 +361,8 @@ Navigation
 
 .cd-title span {
   opacity: 0.6;
+  font-family: 'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 20px;
 }
 .visible .cd-title {
   opacity: 1;
